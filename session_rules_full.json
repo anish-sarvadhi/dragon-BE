@@ -1,0 +1,268 @@
+{
+  "Session Rules for All Agencies + Rhythm agency's Exceptions": [
+  {
+    "rule_number": "1.1",
+    "rule_title": "Status",
+    "section": "Teacher Rules",
+    "rule_content": "The teacher's status must be 'Active' to be recognized by the system.",
+    "provider_resolution": "Contact your admin to update your status to 'Active'.",
+    "admin_resolution": "Update the teacher status to be active from the Teacher’s profile page."
+  },
+  {
+    "rule_number": "1.2",
+    "rule_title": "Role",
+    "section": "Teacher Rules",
+    "rule_content": "If the teacher role is left blank, the system cannot add a session.",
+    "provider_resolution": "Contact your admin to assign a role to your profile.",
+    "admin_resolution": "Assign a role to the teacher from the Teacher’s profile page."
+  },
+  {
+    "rule_number": "1.3",
+    "rule_title": "Approval Date",
+    "section": "Teacher Rules",
+    "rule_content": "Sessions can be scheduled for future dates from the Approval Date.",
+    "provider_resolution": "Contact your admin to set your approval date.",
+    "admin_resolution": "Set the approval date in the teacher's profile."
+  },
+  {
+    "rule_number": "1.4",
+    "rule_title": "Lock/Unlock Session",
+    "section": "Teacher Rules",
+    "rule_content": "Only the supervisor has permission to lock or unlock sessions. If a session is locked, no sessions can be added.",
+    "provider_resolution": "Contact your supervisor/admin to unlock session.",
+    "admin_resolution": "Unlock session access from List Teachers Sessions page > Action column."
+  },
+  {
+    "rule_number": "1.5",
+    "rule_title": "EVV Limit",
+    "section": "Teacher Rules",
+    "rule_content": "The EVV limit applies to the teacher’s profile. If the monthly EVV compliance is exceeded, an exception is recorded, and sessions cannot be added, clocked in/out, or confirmed.",
+    "provider_resolution": "Contact your admin and request to increase your EVV limit.",
+    "admin_resolution": "Two possible actions: 1. Go to Agency profile and update the EVV limit agency wise (for all teachers of the agency). 2. Go to Teacher’s profile and increase the EVV limit for the particular teacher only."
+  },
+  {
+    "rule_number": "1.6",
+    "rule_title": "Service Access",
+    "section": "Teacher Rules",
+    "rule_content": " A teacher should be allowed to access the service from the teacher’s profile.",
+    "provider_resolution": "Contact your admin to allow service access.",
+    "admin_resolution": "Check the services allowed to be given by the teacher from the teacher’s profile."
+  },
+  {
+    "rule_number": "2.1",
+    "rule_title": "Status",
+    "section": "Student Rules",
+    "rule_content": "The student’s status must be 'Active.'",
+    "provider_resolution": "Contact your admin to activate the student’s status.",
+    "admin_resolution": "Update student status to Active from Student’s profile."
+  },
+  {
+    "rule_number": "2.2",
+    "rule_title": "Profile Information",
+    "section": "Student Rules",
+    "rule_content": "The student profile reflects the HCBS service are allowed.",
+    "provider_resolution": "Contact your admin to update the service info.",
+    "admin_resolution": "Allow HCBS services from student’s profile."
+  },
+  {
+    "rule_number": "2.3",
+    "rule_title": "Awaiting Approval",
+    "section": "Student Rules",
+    "rule_content": "Add or confirm sessions isn’t allowed if Student is awaiting approval. Clocking in is allowed.",
+    "provider_resolution": "Contact your admin to approve the student.",
+    "admin_resolution": "Update the HCBS Status from student’s profile to add session for the student."
+  },
+  {
+    "rule_number": "3.1",
+    "rule_title": "Authorization Schedule",
+    "section": "General Session Rules",
+    "rule_content": " An authorization schedule must exist for a session to be added.",
+    "provider_resolution": "Contact your admin to check the authorization schedule.",
+    "admin_resolution": "Add HCBS Authorization Schedule from student’s profile."
+  },
+  {
+    "rule_number": "3.2",
+    "rule_title": "Block Out Dates",
+    "section": "General Session Rules",
+    "rule_content": "If a block-out date is set in the student profile, the student cannot take a session on that date.\n• If a block-out date is set in the teacher profile, he/she cannot add (in real time, cannot give/deliver) session on that date to any student.\n• If a block-out date exists, add session, clock-in, and confirmation is not possible.",
+    "provider_resolution": "Contact your admin to adjust student/teacher block-out date. Contact your admin to verify date settings.",
+    "admin_resolution": "Check/remove block-out date in student/teacher profile. Remove block-out date if necessary."
+  },
+  {
+    "rule_number": "3.3",
+    "rule_title": "Clocked In",
+    "section": "General Session Rules",
+    "rule_content": "If a teacher Clocked in exists with a student, for same student or even for different student, clock in, add session or confirm session isn’t possible.",
+    "provider_resolution": "NA",
+    "admin_resolution": "NA"
+  },
+  {
+    "rule_number": "3.4",
+    "rule_title": "Student LOC (Letter of Completion) Date",
+    "section": "General Session Rules",
+    "rule_content": "LOC date doesn’t exist or has expired.",
+    "provider_resolution": "Contact your Admin to update the LOC date.",
+    "admin_resolution": "Update LOC date from Teacher’s/Student's profile."
+  },
+  {
+    "rule_number": "3.5",
+    "rule_title": "Holidays",
+    "section": "General Session Rules",
+    "rule_content": "On holidays set by the admin, no sessions can be added, confirmed or clocked in.",
+    "provider_resolution": "Contact your admin to check holiday policy and allow you to work on particular holiday.",
+    "admin_resolution": "Allow session explicitly on holiday from teacher’s profile. Holidays are configured from Administration > Holiday Schedule."
+  },
+  {
+    "rule_number": "3.6",
+    "rule_title": "Future Sessions",
+    "section": "General Session Rules",
+    "rule_content": "Teachers are not allowed to add future sessions.",
+    "provider_resolution": "You can’t add future sessions.",
+    "admin_resolution": "You can’t add future sessions."
+  },
+  {
+    "rule_number": "3.7",
+    "rule_title": "Minimum Session Length",
+    "section": "General Session Rules",
+    "rule_content": "Sessions must be at least 1 minute long; 0-minute sessions are not allowed.",
+    "provider_resolution": "Min session of 1 min is required.",
+    "admin_resolution": "Min session of 1 min is required."
+  },
+  {
+    "rule_number": "3.8",
+    "rule_title": "Agency Profile Confirmation Days",
+    "section": "General Session Rules",
+    "rule_content": "Agency profiles can be configured allow confirmation of sessions within a specified number of past days (e.g., if set to 5 days, only the last 5 days' sessions can be added)",
+    "provider_resolution": "Contact your admin if you can't confirm an older session.",
+    "admin_resolution": "Adjust confirmation days in agency profile."
+  },
+  {
+    "rule_number": "3.9",
+    "rule_title": "Unconfirmed Sessions",
+    "section": "General Session Rules",
+    "rule_content": "The system has a condition regarding the number of days to confirm an unconfirmed session before allowing new sessions to be added, clocked in or confirmed. For Rhythm, this number of days is set to 7.",
+    "provider_resolution": "Contact your admin to resolve unconfirmed sessions.",
+    "admin_resolution": "Confirm the unconfirmed session from last XYZ days to be able to add new session. Sessions can be confirmed from List Teacher Sessions or HCBS QA page."
+  },
+  {
+    "rule_number": "3.10",
+    "rule_title": "Conflict of Interest",
+    "section": "General Session Rules",
+    "rule_content": "If this field is set yes in teacher’s profile, then this file must be there to add/clock in or confirm session.",
+    "provider_resolution": "Upload file to add session.",
+    "admin_resolution": "Upload file for teacher’s profile to add session or set the field to no from teacher’s profile."
+  },
+  {
+    "rule_number": "4.1",
+    "rule_title": "Task Document in Teacher/Student Profile",
+    "section": "Compliance Rules",
+    "rule_content": "If the blocking field is set to 'Yes' and the document date is passed, sessions cannot be added unless the document is signed. Doc should be signed as well. (This rule is set only for Rhythm)",
+    "provider_resolution": "Sign and upload task document file to add session.",
+    "admin_resolution": "Sign and upload task document file for teacher’s profile to add session. Or set the blocking field to no from the teacher’s profile."
+  },
+  {
+    "rule_number": "4.2",
+    "rule_title": "Mandated Training Certificate",
+    "section": "Compliance Rules",
+    "rule_content": "If the certificate does not exist in the teacher’s profile, session addition, confirmation, and clock-in are not allowed. • If the certificate exists but is expired, sessions cannot be added. The file expires one year from the upload date.",
+    "provider_resolution": "Upload your mandate training certificate to add session.",
+    "admin_resolution": "Upload teacher's mandate training certificate to add session."
+  },
+  {
+    "rule_number": "5.1",
+    "rule_title": "Relationship/Assignment Rule",
+    "section": "Session Assignment and Group Rules",
+    "rule_content": "A valid assignment must exist for the session date.",
+    "provider_resolution": "Contact your admin to assign session properly.",
+    "admin_resolution": "Create valid assignment for session date from Assign Teachers page. Or check/update the existing assignment from the student’s/teacher’s profile."
+  },
+  {
+    "rule_number": "5.2",
+    "rule_title": "Group Session Limits",
+    "section": "Session Assignment and Group Rules",
+    "rule_content": "Group sessions are allowed with a maximum of 6 students. (for Rhythm) • Sessions cannot be added for multiple students if a group session is not allowed for a student.",
+    "provider_resolution": "Contact your admin to review and update group session rules from existing assignments in the teacher’s/student profile.",
+    "admin_resolution": "Update group session rules from existing assignments in the teacher’s/student profile."
+  },
+  {
+    "rule_number": "5.3",
+    "rule_title": "Agency Profile",
+    "section": "Session Assignment and Group Rules",
+    "rule_content": "If the agency profile has a 15-minute interval key set to 'Yes,' the minimum session duration must be 15 minutes. • An authorization schedule must exist for adding a session.",
+    "provider_resolution": "Contact your admin to confirm minimum duration policy.",
+    "admin_resolution": "Configure (enable or disable) this rule from Agency profile. Note: It will be applied to all teachers of the agency."
+  },
+  {
+  "rule_number": "6.1",
+  "rule_title": "Maximum Session Time by Age",
+  "section": "Student Age Based Session Limits",
+  "rule_content": "Maximum Session Time by Age:\n• < 12 years: Sessions can be scheduled until 9:00 PM. (for Rhythm)\n• 13-14 years: Sessions can be scheduled until 10:00 PM.\n• 15-18 years: Sessions can be scheduled until 11:00 PM.\n• 18+ years: Sessions can be scheduled until 12:00 AM (Midnight).",
+  "provider_resolution": "Contact your admin to verify the allowed session time for a student.",
+  "admin_resolution": "Override student session end time per student profile."
+  },
+  {
+    "rule_number": "7.1",
+    "rule_title": "CFASS Student Participation",
+    "section": "CFASS and HCBS Rules",
+    "rule_content": "CFSS service can be given to both Student and Parent. When the participant is a student, sessions are not allowed during School hours.",
+    "provider_resolution": "NA",
+    "admin_resolution": "NA"
+  },
+  {
+    "rule_number": "7.2",
+    "rule_title": "Class Service Rules School Hour Restrictions",
+    "section": "CFASS and HCBS Rules",
+    "rule_content": "Monday – Thursday: Sessions are allowed except 9 am to 2 pm.\nThursday: Sessions are not allowed during 9 am to 12 pm.\nSaturday and Sunday: Sessions are allowed any time.",
+    "provider_resolution": "NA",
+    "admin_resolution": "NA"
+  },
+  {
+    "rule_number": "7.3",
+    "rule_title": "HCBS HCode Rules",
+    "section": "CFASS and HCBS Rules",
+    "rule_content": "HCBS HCode rules applied.",
+    "provider_resolution": "Contact your admin for rule clarification.",
+    "admin_resolution": "The rules can be configured from Administration > HCBS HCodes."
+  },
+  {
+    "rule_number": "8.29",
+    "rule_title": "Teacher's Weekly Maximum Hours",
+    "section": "Additional Constraints",
+    "rule_content": "Teacher weekly max hours enforced.",
+    "provider_resolution": "Contact your admin if you hit the weekly hour limit.",
+    "admin_resolution": "Configure it from Agency page for all teachers of agency. Overridden for a teacher from the teacher’s profile."
+  },
+  {
+    "rule_number": "8.30",
+    "rule_title": "Daily Mandate & Assignments",
+    "section": "Additional Constraints",
+    "rule_content": "Daily/weekly mandates required.",
+    "provider_resolution": "Contact your admin if daily/weekly mandate prevents session.",
+    "admin_resolution": "Validate daily/weekly mandates and adjust assignment from existing assignment or HCBS Authorization Approval is required from student’s profile. Existing Assignment can be also updated from teacher’s profile.\nNote: Authorization processes considers both teacher and student, daily and weekly mandate, and consider the min mandate to validate assignment."
+  },
+  {
+    "rule_number": "8.31",
+    "rule_title": "Annual Mandate",
+    "section": "Additional Constraints",
+    "rule_content": "Annual mandate cannot be changed.",
+    "provider_resolution": "Contact your admin to clarify policy.",
+    "admin_resolution": "NA"
+  },
+  {
+    "rule_number": "8.32",
+    "rule_title": "Student Overlapping",
+    "section": "Additional Constraints",
+    "rule_content": "Max 2 teachers per student (if no-overlap set). Note: If Overlap is set to no, session cannot be scheduled for a student with more than two teachers simultaneously. No duplicate session for same teacher/student.",
+    "provider_resolution": "Contact your admin if an overlapping rule is triggered.",
+    "admin_resolution": "Allow or restrict overlap session from existing assignment from student or teacher’s profile."
+  },
+  {
+    "rule_number": "8.33",
+    "rule_title": "Agency Profile for Service Goals",
+    "section": "Additional Constraints",
+    "rule_content": "Goal required for certain services. also No clock-in/out if goal required but not added. ",
+    "provider_resolution": "A goal is required, add goal to add/submit a session. Contact your admin to add missing goal. ",
+    "admin_resolution": "A goal is required, add a goal to add/submit a session. Add required goal from Goals module as per your requirement and try assign a session again."
+  }
+  ]
+}
