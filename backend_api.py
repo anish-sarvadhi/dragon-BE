@@ -1,7 +1,8 @@
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
-from final import generate_final_answer
+from final import get_compliance_response
 from fastapi.middleware.cors import CORSMiddleware
+from typing import Optional
 
 
 app = FastAPI(
@@ -21,13 +22,17 @@ app.add_middleware(
 
 class QueryRequest(BaseModel):
     query: str
+    thread_id: Optional[str] = None
 
 class QueryResponse(BaseModel):
     answer: str
+    thread_id: str
     
 @app.get("/health")
 def health_check():
     return {"status": "ok"}
+
+
 
 @app.post("/query", response_model=QueryResponse)
 def handle_query(request: QueryRequest):
@@ -36,7 +41,7 @@ def handle_query(request: QueryRequest):
         raise HTTPException(status_code=400, detail="Query cannot be empty.")
     
     try:
-        final_answer = generate_final_answer(query)
-        return {"answer": final_answer}
+        answer = get_compliance_response(query)
+        return {"answer": answer}
     except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+        raise HTTPException(status_code=500, detail=f"Error: {str(e)}")
