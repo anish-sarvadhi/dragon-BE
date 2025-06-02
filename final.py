@@ -209,16 +209,32 @@ graph = builder.compile(checkpointer=memory)
 
 
 
-# Final API-facing function
-def get_compliance_response(user_query: str) -> str:
-    thread_id = str(uuid.uuid4())
+
+
+def get_compliance_response(user_query: str, thread_id: Optional[str] = None) -> dict:
+    import uuid  # Ensure uuid is imported if not already
+
+    # If no thread_id provided, generate a new one
+    if not thread_id:
+        thread_id = str(uuid.uuid4())
+
+    # Set up graph configuration
     config = {"configurable": {"thread_id": thread_id}}
     state = {"messages": [HumanMessage(content=user_query)], "role": None, "next": None}
 
+    # Invoke the graph
     state_update = graph.invoke({"messages": state["messages"]}, config=config)
     state.update(state_update)
+
+    # Get the chatbot's final answer
     final_answer = state["messages"][-1].content
-    return final_answer
+
+    # Return both answer and thread_id
+    return {
+        "answer": final_answer,
+        "thread_id": thread_id
+    }
+
 
 # Main Loop
 # if __name__ == "__main__":
